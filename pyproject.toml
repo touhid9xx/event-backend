@@ -11,6 +11,9 @@ dependencies = [
     "sqlalchemy[asyncio]>=2.0.45",
     "asyncpg>=0.30.0",
     "alembic>=1.13.0",
+    "pyjwt>=2.9.0",
+    "passlib[argon2]>=1.7.4",
+    "python-multipart>=0.0.9",
 ]
 
 [project.optional-dependencies]

@@ -14,5 +14,9 @@ class Settings(BaseSettings):
 
     database_url: str = "postgresql+asyncpg://eventuser:eventpass@db:5432/eventdb"
 
+    jwt_secret: str = "change-me-in-production-use-openssl-rand-hex-32"
+    jwt_algorithm: str = "HS256"
+    jwt_expire_minutes: int = 60
+
 
 settings = Settings()
